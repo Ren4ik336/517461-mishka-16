@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ринат Атнашев](https://up.htmlacademy.ru/adaptive/16/user/517461).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Ожерельев](https://htmlacademy.ru/profile/id29002).
 
 ---
 
