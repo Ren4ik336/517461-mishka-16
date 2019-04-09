@@ -45,6 +45,7 @@
   width: 100%;
   border: none;
   border-bottom: 2px solid #000000;
+
   &::placeholder {
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 17px;
@@ -66,6 +67,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+
   &:focus {
     color: rgba(98, 98, 98, 1);
   }

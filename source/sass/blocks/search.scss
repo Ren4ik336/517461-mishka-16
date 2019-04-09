@@ -10,8 +10,9 @@
 .search__field {
   @include offset;
   border: none;
+
   &::placeholder {
-    font-family: "OpenSans";
+    font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 17px;
