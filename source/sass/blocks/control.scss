@@ -1,0 +1,19 @@
+.control {
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.control__button {
+  border: none;
+  background-color: transparent;
+  &--left {
+    background: url("../img/icon-left-arrow.svg") no-repeat center center;
+    width: 50px;
+    height: 26px;
+  }
+  &--right {
+    background: url("../img/icon-right-arrow.svg") no-repeat center center;
+    width: 50px;
+    height: 26px;
+  }
+}

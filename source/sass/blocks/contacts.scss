@@ -1,0 +1,17 @@
+.contacts {
+  @include offset;
+}
+
+.contacts__header {
+  min-width: 50px;
+  vertical-align: top;
+}
+
+.contacts__email {
+  color: #444444;
+  text-decoration-color: $aquamarine;
+}
+
+.contacts__address {
+  font-style: normal;
+}

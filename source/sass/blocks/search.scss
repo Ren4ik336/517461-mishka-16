@@ -1,0 +1,21 @@
+.search {
+  @include offset;
+}
+
+.search__button {
+  border: none;
+  background-color: transparent;
+}
+
+.search__field {
+  @include offset;
+  border: none;
+  &::placeholder {
+    font-family: "OpenSans";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+  }
+}

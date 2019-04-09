@@ -1,0 +1,16 @@
+.page-main {
+  @include offset;
+}
+
+.page-main__inner {
+  min-width: 320px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.page-main__slogan {
+  @include offset;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}

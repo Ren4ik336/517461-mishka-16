@@ -1,0 +1,22 @@
+.menu {
+  @include offset;
+  list-style: none;
+}
+
+.menu__item {
+  &--left {
+    background-color: $aquamarine-l;
+  }
+  &--right {
+    background-color: $aquamarine-r;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  color: #ffffff;
+}

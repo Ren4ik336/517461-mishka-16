@@ -1,0 +1,78 @@
+.order-info {
+  @include offset;
+}
+
+.order-info__heading {
+  @include offset;
+  border: none;
+}
+
+.order-info__title {
+  @include offset;
+  border-style: none;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $aquamarine;
+}
+
+.order-info__list {
+  @include offset;
+  list-style: none;
+}
+
+.order-info__label-field {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 18px;
+}
+
+.order-info__label {
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 18px;
+}
+
+.order-info__input-field {
+  @include offset;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  &::placeholder {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #444444;
+    opacity: 0.3;
+  }
+}
+
+.order-info__message {
+  @include offset;
+  border: 2px solid #000000;
+  color: rgba(98, 98, 98, 0.3);
+  width: calc(100% - 4px);
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  &:focus {
+    color: rgba(98, 98, 98, 1);
+  }
+}
+
+.order-info__footnote {
+  font-size: 14px;
+  color: #444444;
+  line-height: 16px;
+}

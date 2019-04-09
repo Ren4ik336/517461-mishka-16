@@ -1,0 +1,10 @@
+.video {
+  @include offset;
+}
+
+.video__comment {
+  @include offset;
+  font-size: 13px;
+  color: #444444;
+  line-height: 24px;
+}
