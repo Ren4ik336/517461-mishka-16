@@ -14,11 +14,6 @@
   font-display: swap;
 }
 
-@mixin offset {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   @include offset;
   min-width: 320px;

@@ -12,7 +12,7 @@
   border: none;
 
   &::placeholder {
-    font-family: "OpenSans", "Arial", sans-serif;
+    font-family: $mianfont;
     font-weight: 700;
     font-style: normal;
     font-size: 17px;

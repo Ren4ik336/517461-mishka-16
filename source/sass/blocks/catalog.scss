@@ -26,6 +26,6 @@
 .catalog__product-description {
   @include offset;
   font-size: 13px;
-  color: #444444;
+  color: $maingrey;
   border-bottom: 1px solid #ececec;
 }
