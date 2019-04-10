@@ -13,17 +13,17 @@
 
 .top-product__description {
   @include offset;
-  color: #444444;
+  color: $maingrey;
 }
 
 .top-product__price-field {
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
-  color: #444444;
+  color: $maingrey;
 }
 
 .top-product__characteristics-table {
-  color: #444444;
+  color: $maingrey;
   line-height: 20px;
 }
