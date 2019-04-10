@@ -1,0 +1,9 @@
+.page-header {
+  @include offset;
+}
+
+.page-header__inner {
+  min-width: 320px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}

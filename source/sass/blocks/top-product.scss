@@ -1,0 +1,29 @@
+.top-product {
+  @include offset;
+}
+
+.top-product__info {
+  font-weight: 700;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 20px;
+  color: $aquamarine;
+  text-transform: uppercase;
+}
+
+.top-product__description {
+  @include offset;
+  color: $maingrey;
+}
+
+.top-product__price-field {
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  color: $maingrey;
+}
+
+.top-product__characteristics-table {
+  color: $maingrey;
+  line-height: 20px;
+}

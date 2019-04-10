@@ -1,0 +1,8 @@
+.cart {
+  @include offset;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}

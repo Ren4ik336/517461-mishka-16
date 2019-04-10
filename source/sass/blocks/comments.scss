@@ -1,0 +1,24 @@
+.comments {
+  @include offset;
+}
+
+.comments__list {
+  @include offset;
+  list-style: none;
+}
+
+.comments__post {
+  font-size: 15px;
+  color: $maingrey;
+}
+
+.comments__author {
+  @include offset;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.comments__instagram-name {
+  @include offset;
+}

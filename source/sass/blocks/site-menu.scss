@@ -1,0 +1,24 @@
+.site-menu {
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.site-menu__item {
+  @include offset;
+  list-style: none;
+}
+
+.site-menu__link {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,10 @@
+.page-footer {
+  @include offset;
+  background-color: #f1f1f1;
+}
+
+.page-footer__inner {
+  min-width: 320px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}

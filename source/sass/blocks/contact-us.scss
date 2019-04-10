@@ -1,0 +1,9 @@
+.contact-us {
+  @include offset;
+}
+
+.contact-us__inner {
+  min-width: 320px;
+  padding: 0 30px;
+  box-sizing: border-box;
+}

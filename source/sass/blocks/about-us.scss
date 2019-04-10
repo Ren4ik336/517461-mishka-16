@@ -1,0 +1,12 @@
+.about-us {
+  @include offset;
+}
+
+.about-us__list {
+  @include offset;
+  list-style: none;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 20px;
+}
