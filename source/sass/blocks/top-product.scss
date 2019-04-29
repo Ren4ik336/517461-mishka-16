@@ -98,11 +98,13 @@
       width: 100%;
     }
   }
+
   .top-product__item {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 16px;
   }
+
   .top-product__wrapper {
     &--title {
       display: flex;
@@ -168,16 +170,12 @@
 
   .top-product__image {
     padding-top: 10px;
-    width: 333px;
+    width: 334px;
     height: 404px;
     margin: 0;
     position: absolute;
     top: 0;
     right: 0;
-  }
-
-  .top-product__image {
-    width: 334px;
   }
 }
 

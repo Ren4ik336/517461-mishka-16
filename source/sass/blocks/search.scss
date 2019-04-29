@@ -9,6 +9,7 @@
 
 .search__button {
   width: 100% / (320 / 75);
+
   @include offset;
   border: none;
   background-color: transparent;
@@ -46,7 +47,6 @@
 
 @media (min-width: $tablet-width) {
   .search {
-    width: auto;
     width: 82px;
     min-height: 88px;
     border-bottom: none;

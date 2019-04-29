@@ -5,6 +5,8 @@
 .contacts__header {
   min-width: 50px;
   vertical-align: top;
+  width: 78px;
+  padding: 0;
 }
 
 .contacts__email {
@@ -31,11 +33,6 @@
   &--email {
     margin-bottom: 29px;
   }
-}
-
-.contacts__header {
-  width: 78px;
-  padding: 0;
 }
 
 .contacts__value {

@@ -129,7 +129,7 @@
   font-style: normal;
   line-height: 18px;
   display: flex;
-  align-items: flex-start;;
+  align-items: flex-start;
   position: relative;
   padding: 11px 20px 10px 62px;
 
@@ -231,6 +231,7 @@
 @media (min-width: $tablet-width) {
   .order-info__heading {
     padding: 0 50px;
+
     &--type {
       display: flex;
       align-items: flex-start;
@@ -495,7 +496,7 @@
     }
 
     &--email {
-      padding-right: 0px;
+      padding-right: 0;
       margin-right: 12px;
     }
   }
