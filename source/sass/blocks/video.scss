@@ -1,0 +1,12 @@
+.video {
+  min-width: 260px;
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    height: 453px;
+    width: 682px;
+    background-size: cover;
+  }
+}

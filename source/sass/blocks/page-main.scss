@@ -6,11 +6,89 @@
   min-width: 320px;
   padding: 0 30px;
   box-sizing: border-box;
+
+  &--form {
+    margin-bottom: 55px;
+  }
 }
 
 .page-main__slogan {
-  @include offset;
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding: 0;
   font-size: 13px;
   line-height: 24px;
   color: $maingrey;
+}
+
+.page-main__comments {
+  padding: 0 30px;
+}
+
+.page-main__manufacturing {
+  margin-bottom: 58px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__inner {
+    padding: 0 50px;
+
+    &--form {
+      padding: 0;
+      margin-bottom: 47px;
+    }
+  }
+
+  .page-main__comments {
+    padding: 0;
+  }
+
+  .page-main__manufacturing {
+    margin-bottom: 63px;
+  }
+
+  .page-main__slogan {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 57px;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__inner {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+
+    &--form {
+      width: auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  .page-main__product {
+    margin: 0 auto;
+  }
+
+  .page-main__comments {
+    margin: 0 50px;
+    position: relative;
+  }
+
+  .page-main__about-us {
+    margin-bottom: 61px;
+  }
+
+  .page-main__manufacturing {
+    margin: 0 50px;
+    margin-bottom: 105px;
+  }
+
+  .page-main__slogan {
+    width: 700px;
+    padding: 0 250px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+  }
 }
