@@ -4,6 +4,24 @@
 
 .page-header__inner {
   min-width: 320px;
-  padding: 0 30px;
   box-sizing: border-box;
+  text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__inner {
+    min-width: 768px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//   .page-header__inner {
+//     width: 1150px;
+//     margin: 0 auto;
+//   }
+// }

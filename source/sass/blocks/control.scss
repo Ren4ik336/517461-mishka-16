@@ -1,21 +1,61 @@
 .control {
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+  border: 1px solid $bordercolor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    border-right: 1px solid $bordercolor;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
 
 .control__button {
   border: none;
   background-color: transparent;
+  padding: 0;
+  margin: 0;
 
   &--left {
     background: url("../img/icon-left-arrow.svg") no-repeat center center;
     width: 50px;
     height: 26px;
+    margin-right: 40px;
   }
 
   &--right {
     background: url("../img/icon-right-arrow.svg") no-repeat center center;
     width: 50px;
     height: 26px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .control {
+    border: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .control__button {
+    &--left {
+      margin-right: 20px;
+    }
+
+    &--right {
+      margin-left: 20px;
+    }
   }
 }

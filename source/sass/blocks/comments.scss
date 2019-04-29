@@ -1,19 +1,32 @@
 .comments {
-  @include offset;
+  &::after {
+    display: block;
+    content: "";
+    background: url("../img/bg-zigzag-line.svg") repeat-x 50% bottom;
+    background-size: contain;
+    height: 6px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
 }
 
-.comments__list {
-  @include offset;
-  list-style: none;
+.comments__title {
+  margin: 0 0 24px 0;
+  padding: 0;
 }
 
 .comments__post {
+  @include offset;
+  margin-bottom: 28px;
   font-size: 15px;
   color: $maingrey;
 }
 
 .comments__author {
   @include offset;
+  margin-bottom: 2px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -21,4 +34,126 @@
 
 .comments__instagram-name {
   @include offset;
+  margin-bottom: 29px;
+}
+
+.comments__control {
+  padding: 12px 0;
+  margin-bottom: 38px;
+}
+
+.comments__button {
+  margin-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments {
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    // width: 100%;
+
+    &::after {
+      bottom: 0;
+      height: 17px;
+      background: url("../img/zigzag-line-desktop.png") repeat-x 50% bottom;
+      background-size: contain;
+    }
+  }
+
+  .comments__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .comments__list {
+    width: 300px;
+    background: url("../img/review@1x.jpg") no-repeat 0 50%;
+    background-size: cover;
+    padding: 76px 0 50px 50px;
+    margin-bottom: 53px;
+  }
+
+  .comments__title {
+    margin-left: -3px;
+    margin-bottom: 50px;
+  }
+
+  .comments__post {
+    font-size: 17px;
+    line-height: 30px;
+    width: 645px;
+    margin-bottom: 57px;
+  }
+
+  .comments__author {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .comments__instagram-name {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .comments__wrapper {
+    padding-top: 78px;
+
+    &--control {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  }
+
+  .comments__button {
+    width: 172px;
+    margin-bottom: 226px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments {
+    &::after {
+      width: 1050px;
+      margin: 0 auto;
+      height: 23px;
+    }
+  }
+
+  .comments__inner {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .comments__list {
+    width: 176px;
+    padding: 70px 0 65px 174px;
+    margin-bottom: 90px;
+  }
+
+  .comments__post {
+    width: 775px;
+    margin-bottom: 38px;
+  }
+
+  .comments__author {
+    margin-bottom: 4px;
+    margin-left: 2px;
+    width: 300px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .comments__wrapper {
+    padding-right: 0;
+  }
+
+  .comments__button {
+    margin-bottom: 178px;
+  }
 }

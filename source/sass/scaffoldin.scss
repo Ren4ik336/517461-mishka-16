@@ -15,20 +15,54 @@
 }
 
 body {
-  @include offset;
+  margin: 0;
+  padding: 0;
   min-width: 320px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
   line-height: 30px;
+  // background: url("../img/preview/mishka-form-mobile.jpg") no-repeat 50% 0;
+  // background: url("../img/preview/mishka-index-mobile.jpg") no-repeat 50% 0;
+  // background: url("../img/preview/mishka-index-desktop.jpg") no-repeat 50% 0;
+  // opacity: 0.5;
 }
 
-.visually-hidden {
-  visibility: hidden;
-  margin: -1px;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    // background: url("../img/preview/mishka-form-tablet.jpg") no-repeat 50% 0;
+    // background: url("../img/preview/mishka-index-tablet.jpg") no-repeat 50% 0;
+    // background: url("../img/preview/mishka-catalog-tablet.jpg") no-repeat 50% 0;
+    // opacity: 0.7;
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    // background: url("../img/preview/mishka-form-desktop.jpg") no-repeat 50% 0;
+    // background: url("../img/preview/mishka-index-desktop.jpg") no-repeat 50% 0;
+    // background: url("../img/preview/mishka-catalog-desktop.jpg") no-repeat 50% 0;
+    // opacity: 0.7;
+    min-width: 1150px;
+  }
 }

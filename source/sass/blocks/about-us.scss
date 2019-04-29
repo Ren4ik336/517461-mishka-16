@@ -1,12 +1,97 @@
-.about-us {
-  @include offset;
-}
-
 .about-us__list {
-  @include offset;
-  list-style: none;
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
   line-height: 20px;
+  margin-bottom: 54px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.about-us__title {
+  padding: 0;
+  padding-top: 33px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.about-us__item {
+  min-height: 92px;
+  padding-top: 28px;
+}
+
+.about-us__icon {
+  fill: $aquamarine;
+  display: block;
+
+  &--flower {
+    margin-left: 6px;
+    margin-bottom: 17px;
+  }
+
+  &--money {
+    margin-top: 2px;
+    margin-bottom: 26px;
+  }
+
+  &--heart {
+    margin-left: 7px;
+    margin-top: 6px;
+    margin-bottom: 22px;
+  }
+
+  &--ball {
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 17px;
+  }
+
+  &--rocket {
+    margin-top: 4px;
+    margin-bottom: 28px;
+  }
+
+  &--gift {
+    margin-left: 3px;
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__list {
+    margin-bottom: 56px;
+  }
+
+  .about-us__title {
+    margin-left: -5px;
+    padding-top: 66px;
+    margin-bottom: 20px;
+  }
+
+  .about-us__item {
+    min-width: 334px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__title {
+    width: 710px;
+    margin: 0 auto 20px auto;
+    padding: 0 50px;
+    padding-top: 60px;
+  }
+
+  .about-us__list {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .about-us__item {
+    min-width: 350px;
+  }
 }
