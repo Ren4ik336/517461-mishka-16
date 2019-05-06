@@ -128,9 +128,7 @@
     top: 12px;
     left: 12px;
   }
-}
 
-.order-info__point {
   &:hover::before,
   &:focus::before {
     border-color: $aquamarine;
@@ -175,9 +173,7 @@
     left: 9px;
     margin: auto;
   }
-}
 
-.order-info__checkbox {
   &:hover::before,
   &:focus::before {
     border-color: $aquamarine;
