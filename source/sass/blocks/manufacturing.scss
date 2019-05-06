@@ -44,15 +44,53 @@
   margin: 0 33px 32px 33px;
 }
 
+.manufacturing__video-frame {
+  position: relative;
+}
+
+.manufacturing__play {
+  background-color: transparent;
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  fill: #63D1BB;
+
+  &:hover,
+  &:focus {
+    width: 121px;
+    height: 92px;
+    background-size: contain;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .manufacturing {
     display: flex;
     flex-direction: column;
   }
 
+  .manufacturing__video-frame {
+    width: 668px;
+    height: 455px;
+    order: 1;
+  }
+
   .manufacturing__video {
     background: url("../img/video-tablet@1x.jpg") no-repeat center center;
-    order: 1;
+
     width: 668px;
     height: 455px;
   }
@@ -92,6 +130,12 @@
     width: 1048px;
     min-height: 453px;
     position: relative;
+  }
+
+  .manufacturing__video-frame {
+    width: 682px;
+    height: 455px;
+    position: absolute;
   }
 
   .manufacturing__video {

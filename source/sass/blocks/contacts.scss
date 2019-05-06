@@ -16,6 +16,16 @@
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid $aquamarine;
+
+  &:hover,
+  &:focus {
+    color: $aquamarine;
+  }
+
+  &:active {
+    color: $aquamarine;
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {

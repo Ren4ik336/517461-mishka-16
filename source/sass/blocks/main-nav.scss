@@ -12,6 +12,27 @@
   padding-bottom: 13px;
   border-top: 1px solid $bordercolor;
   border-bottom: 1px solid $bordercolor;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.cart__icon {
+  opacity: 0.2;
+}
+
+.main-nav__cart {
+  &:hover .cart__icon,
+  &:focus .cart__icon {
+    opacity: 1;
+    fill: $aquamarine;
+  }
 }
 
 .main-nav__toggle {
@@ -30,12 +51,18 @@
   display: none;
 }
 
-.main-nav__new {
-  display: none;
-}
-
+.main-nav__new,
 .main-nav__sale {
   display: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -77,14 +104,6 @@
     padding-top: 27px;
     padding-bottom: 28px;
     padding-left: 100% / (320 / 75);
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .main-nav--closed .main-nav__menu,

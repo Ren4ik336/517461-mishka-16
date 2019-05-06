@@ -10,6 +10,15 @@
 .catalog__item {
   border: 1px solid #ececec;
   margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1)
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1)
+  }
 }
 
 .catalog__link {
@@ -104,7 +113,8 @@
     margin-top: auto;
     margin-right: 30px;
     padding: 20px 0 20px 0;
-    min-width: 273px;
+    min-width: auto;
+    width: 273px;
     border-top: 1px solid $bordercolor;
   }
 

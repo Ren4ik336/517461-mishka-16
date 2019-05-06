@@ -81,6 +81,7 @@
 
 .order-info__icon {
   position: absolute;
+  opacity: 0.2;
 
   &--telephone {
     right: 8px;
@@ -102,6 +103,7 @@
   align-items: flex-start;
   position: relative;
   padding: 9px 20px 10px 62px;
+  cursor: pointer;
 
   &::before {
     display: block;
@@ -109,7 +111,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 2px solid #000000;
+    border: 2px solid rgb(68, 68, 68);
     position: absolute;
     top: 0;
     left: 0;
@@ -128,6 +130,17 @@
   }
 }
 
+.order-info__point {
+  &:hover::before,
+  &:focus::before {
+    border-color: $aquamarine;
+  }
+
+  &:active::before {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+}
+
 .order-info__checkbox {
   font-size: 17px;
   font-weight: 700;
@@ -137,6 +150,7 @@
   align-items: flex-start;
   position: relative;
   padding: 11px 20px 10px 62px;
+  cursor: pointer;
 
   &::before {
     display: block;
@@ -146,11 +160,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    border: 2px solid #000000;
+    border: 2px solid rgb(68, 68, 68);
   }
 
   &::after {
-    display: block;
+    display: none;
     content: "";
     width: 22px;
     height: 16px;
@@ -160,6 +174,17 @@
     top: 12px;
     left: 9px;
     margin: auto;
+  }
+}
+
+.order-info__checkbox {
+  &:hover::before,
+  &:focus::before {
+    border-color: $aquamarine;
+  }
+
+  &:active::before {
+    border-color: rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -180,6 +205,7 @@
   font-style: normal;
   line-height: 18px;
   position: relative;
+  cursor: pointer;
 }
 
 .order-info__enter {
@@ -193,6 +219,7 @@
   width: 100%;
   border: none;
   border-bottom: 2px solid #000000;
+  outline-color: aquamarine;
 
   &::placeholder {
     font-family: $mianfont;
@@ -202,6 +229,17 @@
     line-height: 18px;
     color: $maingrey;
     opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom-color: $aquamarine;
+  }
+
+  &:hover ~ .order-info__icon,
+  &:focus ~ .order-info__icon {
+    fill: $aquamarine;
+    opacity: 1;
   }
 }
 
@@ -219,9 +257,15 @@
   font-weight: 400;
   line-height: 18px;
   margin-bottom: 14px;
+  outline: $aquamarine;
 
   &:focus {
     color: rgba(98, 98, 98, 1);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $aquamarine;
   }
 }
 
@@ -234,7 +278,7 @@
 }
 
 .order-info__input:checked ~ .order-info__point::after,
-.order-info__input:checked ~ .order-info__checkbox::before {
+.order-info__input:checked ~ .order-info__checkbox::after {
   display: block;
 }
 
@@ -322,6 +366,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-right: -23px;
   }
 
   .order-info__item {
@@ -332,6 +377,7 @@
     margin-top: 33px;
     margin-bottom: 0;
     min-width: 239px;
+    margin-right: 23px;
   }
 
   .order-info__name {
@@ -340,10 +386,6 @@
 
   .order-info__color:last-child {
     margin-bottom: 0;
-  }
-
-  .order-info__color:nth-child(odd) {
-    margin-right: 23px;
   }
 
   .order-info__initials {
@@ -358,9 +400,7 @@
   }
 
   .order-info__message {
-    width: auto;
-    min-width: 467px;
-    flex-grow: 1;
+    width: (467 / 668) * 100%;
     order: 2;
     margin-bottom: 52px;
   }
@@ -382,6 +422,7 @@
   }
 
   .order-info__point {
+    min-width: 355px;
     padding: 15px 20px 10px 81px;
     font-size: 19px;
     line-height: 18px;

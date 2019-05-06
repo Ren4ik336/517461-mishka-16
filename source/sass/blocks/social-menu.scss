@@ -18,6 +18,16 @@
 }
 
 .social-menu__icon {
+
+  &:hover,
+  &:focus {
+    fill: $aquamarine;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--facebook {
     margin-left: 3px;
     margin-top: -2px;
