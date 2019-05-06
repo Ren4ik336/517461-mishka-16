@@ -1,14 +1,16 @@
 .page-main {
   @include offset;
+
 }
 
 .page-main__inner {
   min-width: 320px;
   padding: 0 30px;
   box-sizing: border-box;
+  overflow: hidden;
 
   &--form {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 }
 
@@ -35,7 +37,7 @@
 
     &--form {
       padding: 0;
-      margin-bottom: 47px;
+      margin-bottom: 15px;
     }
   }
 
@@ -63,7 +65,7 @@
 
     &--form {
       width: auto;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
   }
 
@@ -90,5 +92,9 @@
     padding: 0 250px;
     margin: 0 auto;
     margin-bottom: 57px;
+  }
+
+  .page-main__contact-us {
+    margin-bottom: 29px;
   }
 }

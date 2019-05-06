@@ -19,9 +19,8 @@
   }
 }
 
-// @media (min-width: $desktop-width) {
-//   .page-header__inner {
-//     width: 1150px;
-//     margin: 0 auto;
-//   }
-// }
+@media (min-width: $desktop-width) {
+  .page-header__inner {
+    margin: 0 auto;
+  }
+}

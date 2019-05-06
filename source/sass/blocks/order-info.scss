@@ -7,16 +7,17 @@
   }
 
   &--color {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   &--fullname {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
+    min-height: 300px;
   }
+}
 
-  &--additional {
-    margin-bottom: 25px;
-  }
+.order-info__wrapper {
+  min-height: 180px;
 }
 
 .order-info__title {
@@ -42,7 +43,10 @@
     margin-left: 18px;
   }
 
-  &--telephone,
+  &--telephone {
+    margin-bottom: 7px;
+  }
+
   &--email {
     margin-bottom: 7px;
   }
@@ -67,7 +71,8 @@
 
 .order-info__name {
   width: 100%;
-  margin-bottom: 22px;
+  padding: 0;
+  margin: 0 0 22px 0;
 }
 
 .order-info__input {
@@ -169,7 +174,7 @@
   width: 100%;
   display: block;
   padding: 0;
-  margin-bottom: 0;
+  margin-bottom: 1px;
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
@@ -184,7 +189,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  padding: 13px 0;
+  padding: 14px 0 12px 0;
   width: 100%;
   border: none;
   border-bottom: 2px solid #000000;
@@ -201,8 +206,10 @@
 }
 
 .order-info__message {
+  display: block;
   margin: 0;
   padding: 15px;
+  min-height: 108px;
   border: 2px solid #000000;
   color: rgba(98, 98, 98, 0.3);
   width: calc(100% - 34px);
@@ -211,6 +218,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  margin-bottom: 14px;
 
   &:focus {
     color: rgba(98, 98, 98, 1);
@@ -218,9 +226,11 @@
 }
 
 .order-info__footnote {
+  display: block;
   font-size: 14px;
   color: $maingrey;
   line-height: 16px;
+  margin-bottom: 32px;
 }
 
 .order-info__input:checked ~ .order-info__point::after,
@@ -239,8 +249,6 @@
     }
 
     &--color {
-      // display: flex;
-      // align-items: flex-start;
       padding-top: 18px;
       background-color: #f1f1f1;
       padding-bottom: 58px;
@@ -280,11 +288,6 @@
   .order-info__color-wrapper {
     display: flex;
     align-items: flex-start;
-    // padding: 0;
-    // padding-top: 18px;
-    // background-color: #f1f1f1;
-    // padding-bottom: 58px;
-    // margin-bottom: 49px;
   }
 
   .order-info__title {
@@ -318,7 +321,7 @@
   .order-info__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .order-info__item {
@@ -462,6 +465,7 @@
 
     &--fullname {
       width: 1034px;
+      min-height: 228px;
       margin: 0 auto;
       margin-bottom: 17px;
       padding: 0 8px;
@@ -472,6 +476,7 @@
       margin: 0 auto;
       padding: 0 8px;
       padding-top: 59px;
+      min-height: 56px;
     }
 
     &--email {
@@ -479,6 +484,7 @@
       margin: 0 auto;
       margin-bottom: 49px;
       padding: 0 0 20px 16px;
+      min-height: 66px;
     }
 
     &--additional {
@@ -498,6 +504,17 @@
     &--email {
       padding-right: 0;
       margin-right: 12px;
+      margin-top: 12px;
+    }
+  }
+
+  .order-info__icon {
+    &--telephone {
+      right: 8px;
+    }
+
+    &--email {
+      right: 4px;
     }
   }
 
@@ -514,6 +531,7 @@
 
   .order-info__list {
     justify-content: flex-start;
+    width: 1034px;
   }
 
   .order-info__name {
@@ -528,22 +546,50 @@
     width: 450px;
   }
 
+  .order-info__color:nth-child(odd) {
+    margin: 0;
+  }
+
   .order-info__color {
     min-width: 230px;
+    width: 262px;
     margin: 0;
-    margin-right: 20px;
     margin-bottom: 33px;
   }
 
   .order-info__initials {
     width: 700px;
+    min-height: 42px;
+  }
+
+  .order-info__wrapper {
+    min-height: 230px;
+    margin-bottom: 47px;
+  }
+
+  .order-info__enter {
+    padding-left: 15px;
+    padding-top: 2px;
+    line-height: 18px;
+    font-size: 19px;
+
+    &--telephone {
+      padding-bottom: 12px;
+      min-height: 26px;
+    }
+
+    &--email {
+      padding-bottom: 14px;
+      min-height: 26px;
+    }
   }
 
   .order-info__message {
     min-width: auto;
     width: 666px;
     flex-grow: unset;
-    margin-bottom: 49px;
+    flex-grow: 0;
+    margin-bottom: 47px;
   }
 
   .button--order-info {

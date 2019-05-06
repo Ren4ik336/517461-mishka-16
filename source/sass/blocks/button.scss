@@ -1,6 +1,6 @@
 .button {
   margin: 0;
-  padding: 9px 0;
+  padding: 16px 0;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -9,10 +9,11 @@
   color: $maingrey;
   border: 2px solid $maingrey;
   text-align: center;
+  line-height: 16px;
 
   &--order-info {
     background-color: transparent;
     width: 100%;
-    padding: 14px;
+    padding: 16px;
   }
 }

@@ -8,8 +8,8 @@
 
 .main-nav__logo {
   display: block;
-  padding-top: 19px;
-  padding-bottom: 15px;
+  padding-top: 21px;
+  padding-bottom: 13px;
   border-top: 1px solid $bordercolor;
   border-bottom: 1px solid $bordercolor;
 }
@@ -143,7 +143,6 @@
   .main-nav__cart {
     order: 3;
     flex-grow: 1;
-    // margin-right: 30px;
   }
 
   .main-nav__menu {

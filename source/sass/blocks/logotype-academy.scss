@@ -6,4 +6,11 @@
 
 .logotype-academy__icon {
   vertical-align: bottom;
+  margin-top: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .logotype-academy__icon {
+    margin-top: 2px;
+  }
 }

@@ -17,6 +17,13 @@
   width: 26px;
 }
 
+.social-menu__icon {
+  &--facebook {
+    margin-left: 3px;
+    margin-top: -2px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social-menu {
     border-bottom: none;

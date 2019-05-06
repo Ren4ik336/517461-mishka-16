@@ -1,5 +1,5 @@
 .contact-us__inner {
-  min-width: 320px;
+  min-width: 260px;
   padding: 0 30px;
   box-sizing: border-box;
   margin-bottom: 37px;
@@ -21,6 +21,8 @@
 
 .contact-us__button {
   margin: 0 30px;
+  min-width: 256px;
+  font-size: 18px;
 }
 
 .contact-us__wrapper {
@@ -58,9 +60,13 @@
   }
 
   .contact-us__button {
+    min-width: auto;
     width: 226px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 56px;
+    padding: 14px 0;
+    font-size: 17px;
+    line-height: 20px;
   }
 }
 

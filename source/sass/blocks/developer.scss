@@ -4,6 +4,7 @@
 }
 
 .developer__text {
+  max-width: 180px;
   display: inline-block;
   vertical-align: middle;
   font-size: 19px;
@@ -14,4 +15,16 @@
 .developer__logotype {
   display: inline-block;
   vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .developer__text {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developer__text {
+    max-width: 260px;
+  }
 }

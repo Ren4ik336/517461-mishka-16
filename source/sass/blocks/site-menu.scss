@@ -51,7 +51,6 @@
 
   .site-menu__link {
     padding: 9px 0;
-    // min-height: 70px;
   }
 }
 
@@ -66,9 +65,11 @@
   .site-menu__item {
     min-width: 184px;
     margin-right: 34px;
+    border-right: 1px solid $bordercolor;
+    padding: 32px 0;
 
-    &:first-child {
-      border-right: 1px solid $bordercolor;
+    &:last-child {
+      border-right: none;
     }
   }
 }

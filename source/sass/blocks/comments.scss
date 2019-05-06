@@ -19,7 +19,7 @@
 
 .comments__post {
   @include offset;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   font-size: 15px;
   color: $maingrey;
 }
@@ -35,6 +35,8 @@
 .comments__instagram-name {
   @include offset;
   margin-bottom: 29px;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .comments__control {
@@ -49,9 +51,6 @@
 @media (min-width: $tablet-width) {
   .comments {
     position: relative;
-    // display: flex;
-    // justify-content: space-between;
-    // width: 100%;
 
     &::after {
       bottom: 0;
@@ -104,9 +103,13 @@
     &--control {
       display: flex;
       flex-direction: column-reverse;
-      justify-content: flex-end;
+      justify-content: space-between;
       padding-right: 50px;
     }
+  }
+
+  .comments__control {
+    margin-bottom: 135px;
   }
 
   .comments__button {
@@ -151,6 +154,10 @@
 
   .comments__wrapper {
     padding-right: 0;
+  }
+
+  .comments__control {
+    margin-bottom: 190px;
   }
 
   .comments__button {
