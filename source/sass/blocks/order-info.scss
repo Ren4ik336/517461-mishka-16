@@ -527,6 +527,8 @@
   .order-info__wrapper {
     width: 100%;
     background-color: #f1f1f1;
+    min-height: 230px;
+    margin-bottom: 47px;
   }
 
   .order-info__list {
@@ -562,11 +564,6 @@
     min-height: 42px;
   }
 
-  .order-info__wrapper {
-    min-height: 230px;
-    margin-bottom: 47px;
-  }
-
   .order-info__enter {
     padding-left: 15px;
     padding-top: 2px;
@@ -587,7 +584,6 @@
   .order-info__message {
     min-width: auto;
     width: 666px;
-    flex-grow: unset;
     flex-grow: 0;
     margin-bottom: 47px;
   }

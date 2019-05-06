@@ -106,17 +106,6 @@
     padding: 20px 0 20px 0;
     min-width: 273px;
     border-top: 1px solid $bordercolor;
-
-    // &::before {
-    //   display: block;
-    //   content: "";
-    //   height: 1px;
-    //   width: 300px;
-    //   background-color: $bordercolor;
-    //   position: absolute;
-    //   top: -20px;
-    // }
-
   }
 
   .catalog__item-price {
@@ -159,7 +148,7 @@
   }
 
   .catalog__product-title {
-    padding:25px 46px 0px 26px;
+    padding: 25px 46px 0 26px;
   }
 
   .catalog__product-description {
