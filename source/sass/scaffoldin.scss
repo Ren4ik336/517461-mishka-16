@@ -52,17 +52,17 @@ img {
     // background: url("../img/preview/mishka-form-tablet.jpg") no-repeat 50% 0;
     // background: url("../img/preview/mishka-index-tablet.jpg") no-repeat 50% 0;
     // background: url("../img/preview/mishka-catalog-tablet.jpg") no-repeat 50% 0;
-    opacity: 0.5;
+    // opacity: 0.5;
     min-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
-    background: url("../img/preview/mishka-form-desktop.jpg") no-repeat 50% 0;
+    // background: url("../img/preview/mishka-form-desktop.jpg") no-repeat 50% 0;
     // background: url("../img/preview/mishka-index-desktop.jpg") no-repeat 50% 0;
     // background: url("../img/preview/mishka-catalog-desktop.jpg") no-repeat 50% 0;
-    opacity: 0.3;
+    // opacity: 0.3;
     min-width: 1150px;
   }
 }
