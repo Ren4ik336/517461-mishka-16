@@ -1,97 +1,187 @@
+.about-us {
+  padding: 25px 0 45px 0;
+  position: relative;
+
+  &::after {
+    height: 17px;
+    width: 100%;
+    display: block;
+    content: "";
+    background: url("../img/zigzag-line-desktop.png") repeat-x center 0;
+    background-size: 319px 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  &::before {
+    height: 17px;
+    width: 100%;
+    display: block;
+    content: "";
+    background: url("../img/zigzag-line-desktop.png") repeat-x center 0;
+    background-size: 319px 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -17px;
+  }
+}
+
 .about-us__list {
+  @include offset;
+  list-style: none;
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
   line-height: 20px;
-  margin-bottom: 54px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 .about-us__title {
   padding: 0;
-  padding-top: 33px;
-  margin: 0;
-  margin-bottom: 4px;
+  margin: 8px 0 23px 0;
 }
 
 .about-us__item {
-  min-height: 92px;
-  padding-top: 28px;
+  padding-top: 63px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
 .about-us__icon {
+  position: absolute;
   fill: $aquamarine;
   display: block;
 
+
   &--flower {
-    margin-left: 6px;
-    margin-bottom: 17px;
+    top: 8px;
+    left: 8px;
   }
 
   &--money {
-    margin-top: 2px;
-    margin-bottom: 26px;
+    top: 10px;
   }
 
   &--heart {
-    margin-left: 7px;
-    margin-top: 6px;
-    margin-bottom: 22px;
+    top: 14px;
+    left: 7px;
   }
 
   &--ball {
-    margin-left: 3px;
-    margin-top: 3px;
-    margin-bottom: 17px;
+    top: 12px;
+    left: 3px;
   }
 
   &--rocket {
-    margin-top: 4px;
-    margin-bottom: 28px;
+    top: 12px;
+    left: -5px;
   }
 
   &--gift {
-    margin-left: 3px;
-    margin-bottom: 23px;
+    top: 10px;
+    left: 3px;;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .about-us__list {
-    margin-bottom: 56px;
+  .about-us {
+    padding-top: 66px;
+    padding-bottom: 68px;
+
+    &::after {
+      background: url("../img/zigzag-line-desktop.png") repeat-x center 0;
+    }
+
+    &::before {
+      background: url("../img/zigzag-line-desktop.png") repeat-x center 0;
+    }
   }
 
   .about-us__title {
     margin-left: -5px;
-    padding-top: 66px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .about-us__list {
+    margin-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .about-us__item {
-    min-width: 334px;
+    min-width: 309px;
+    padding-right: 25px;
+    padding-top: 62px;
+    padding-bottom: 49px;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 28px;
+
+    &:first-child {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 5;
+    }
+
+    &:nth-child(4) {
+      order: 2;
+    }
+
+    &:nth-child(5) {
+      order: 4;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    padding-top: 0;
+    padding-bottom: 75px;
+
+    &::after {
+      background: url("../img/bg-zigzag-line.svg") repeat-x 26px 0;
+      height: 23px;
+      width: 1050px;
+      background-size: contain;
+      margin: 0 auto;
+      top: -23px;
+    }
+
+    &::before {
+      background: url("../img/bg-zigzag-line.svg") repeat-x 26px 0;
+      height: 23px;
+      width: 1050px;
+      background-size: contain;
+      margin: 0 auto;
+    }
+  }
+
   .about-us__title {
     width: 710px;
-    margin: 0 auto 20px auto;
-    padding: 0 50px;
+    margin: 0 auto 40px auto;
     padding-top: 60px;
   }
 
   .about-us__list {
     width: 700px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     padding: 0 50px;
   }
 
   .about-us__item {
-    min-width: 350px;
+    min-width: 325px;
   }
 }

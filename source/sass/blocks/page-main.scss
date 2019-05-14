@@ -7,16 +7,11 @@
   padding: 0 30px;
   box-sizing: border-box;
   overflow: hidden;
-
-  &--form {
-    margin-bottom: 56px;
-  }
 }
 
 .page-main__slogan {
   margin-top: 0;
-  margin-bottom: 24px;
-  padding: 0;
+  margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
   color: $maingrey;
@@ -90,14 +85,20 @@
     margin-bottom: 61px;
   }
 
+  .page-main__contacts {
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .page-main__manufacturing {
     margin: 0 50px;
     margin-bottom: 105px;
   }
 
   .page-main__slogan {
-    width: 700px;
-    padding: 0 250px;
+    width: 800px;
     margin: 0 auto;
     margin-bottom: 57px;
   }

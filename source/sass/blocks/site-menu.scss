@@ -1,15 +1,13 @@
 .site-menu {
+  @include offset;
+  list-style: none;
   font-size: 17px;
   font-weight: 700;
   font-style: normal;
   line-height: 24px;
-
-  @include offset;
-  list-style: none;
 }
 
 .site-menu__item {
-  text-align: left;
   padding: 0;
   margin: 0;
 
@@ -26,9 +24,12 @@
 }
 
 .site-menu__link {
+  display: block;
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+  text-align: left;
+  padding: 27px 30px 28px 77px;
 
   &:hover,
   &:focus {
@@ -42,16 +43,20 @@
 
 @media (min-width: $tablet-width) {
   .site-menu {
+    width: 60%;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     font-size: 15px;
     min-height: 60px;
-    align-items: center;
     position: relative;
     z-index: 10;
   }
 
   .site-menu__item {
-    min-width: 167px;
+    min-width: 140px;
+    margin-left: 0;
+    margin-right: 27px;
 
     &::after {
       display: none;
@@ -59,12 +64,13 @@
   }
 
   .site-menu__link {
-    padding: 9px 0;
+    padding: 17px 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-menu {
+    width: 450px;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
@@ -75,10 +81,14 @@
     min-width: 184px;
     margin-right: 34px;
     border-right: 1px solid $bordercolor;
-    padding: 32px 0;
 
     &:last-child {
       border-right: none;
+      margin-right: 0;
     }
+  }
+
+  .site-menu__link {
+    padding: 32px 0;
   }
 }

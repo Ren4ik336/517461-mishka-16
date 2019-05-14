@@ -1,39 +1,16 @@
 .page-footer {
-  @include offset;
   background-color: #f1f1f1;
 }
 
 .page-footer__inner {
-  min-width: 320px;
+  min-width: 260px;
   padding: 0 30px;
   box-sizing: border-box;
 }
 
 .page-footer__logo {
   display: none;
-}
 
-.page-footer__social-menu {
-  @include offset;
-  margin-bottom: 20px;
-}
-
-.page-footer__developer {
-  @include offset;
-  padding-bottom: 23px;
-  height: auto;
-
-  &:hover .logotype-academy__icon,
-  &focus .logotype-academy__icon {
-    fill: #46c1ae;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.logo__image {
   &:hover,
   &:focus {
     fill: $aquamarine;
@@ -44,41 +21,35 @@
   }
 }
 
+.page-footer__social-menu {
+  @include offset;
+  margin-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     min-height: 143px;
   }
 
   .page-footer__inner {
-    min-width: 768px;
     height: 100%;
+    padding: 28px 50px 35px 50px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 52px 50px 0 50px;
   }
 
   .page-footer__logo {
     display: block;
     margin-right: 80px;
+    padding-top: 23px;
+    padding-bottom: 23px;
     height: 34px;
     width: 102px;
   }
 
-  .page-footer__social-menu {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    max-width: 525px;
-    min-height: 29px;
-    margin-top: 4px;
-    margin-bottom: 10px;
-  }
-
-  .page-footer__developer {
-    padding-bottom: 0;
-    padding-top: 5px;
-    margin: 0 0 10px 0;
+  .page-footer__copyright {
+    margin-top: 9px;
   }
 }
 
@@ -88,16 +59,11 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 52px 50px 0 50px;
-    // padding: 0 50px;
+    padding: 29px 50px 34px 50px;
     min-height: 143px;
   }
 
   .page-footer__social-menu {
     padding-top: 0;
-  }
-
-  .page-footer__developer {
-    padding-top: 4px;
   }
 }

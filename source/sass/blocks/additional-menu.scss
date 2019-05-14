@@ -1,0 +1,56 @@
+.additional-menu {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-menu {
+    display: flex;
+    z-index: 10;
+    width: 40%;
+  }
+
+  .additional-menu__link {
+    display: block;
+    line-height: 24px;
+    padding: 17px 0;
+
+    &--new,
+    &--sale {
+      display: none;
+      font-weight: 700;
+    }
+
+    &--delivery {
+      margin-left: auto;
+      font-weight: 400;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-menu {
+    width: 1050px;
+    justify-content: flex-start;
+  }
+  .additional-menu__link {
+    &--new,
+    &--sale {
+      display: block;
+      font-size: 15px;
+      line-height: 24px;
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
+      margin-right: 60px;
+    }
+  }
+}

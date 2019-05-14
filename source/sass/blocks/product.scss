@@ -1,0 +1,151 @@
+.product {
+  outline-style: inset;
+  outline: 1px solid $bordercolor;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.product__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.product__wrapper {
+  padding-top: 28px;
+  padding-right: 28px;
+  padding-bottom: 21px;
+  padding-left: 28px;
+}
+
+.product__title {
+  padding: 0;
+  margin: 0 0 5px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+.product__image {
+  display: block;
+  width: 100%;
+  min-width: 260px;
+  height: auto;
+  min-height: 195px;
+  margin: 0;
+  background-color: $bordercolor;
+}
+
+.product__description {
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: $maingrey;
+  word-break: break-all;
+}
+
+.product__buy {
+  margin: 0;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid $bordercolor;
+}
+
+.product__price {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.product__add-cart {
+  text-decoration: none;
+}
+
+.product__cart-icon {
+  width: 20px;
+  height: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0;
+  }
+
+  .product__wrapper {
+    min-width: 278px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-top: 25px;
+  }
+
+  .product__title {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product__description {
+    font-size: 15px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .product__price {
+    font-size: 17px;
+  }
+
+  .product__image {
+    margin-bottom: 0;
+    min-width: 334px;
+    min-height: 334px;
+  }
+
+  .product__buy {
+    margin-top: auto;
+    display: flex;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 316px;
+    flex-direction: column;
+  }
+
+  .product__description {
+    margin-bottom: 14px;
+  }
+
+  .product__buy {
+    margin-left: 0;
+    margin-right: 6px;
+  }
+
+  .product__wrapper {
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 256px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .product__image {
+    min-width: 314px;
+  }
+}

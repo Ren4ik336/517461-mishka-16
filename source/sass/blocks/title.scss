@@ -14,7 +14,7 @@
   }
 
   &--form {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 
   &--manufacture {
@@ -32,9 +32,10 @@
     &--catalog,
     &--form {
       margin-top: -60px;
-      padding-top: 98px;
+      margin-bottom: 83px;
+      padding-top: 95px;
       position: relative;
-      margin-bottom: 82px;
+      border-top: 1px solid $bordercolor;
 
       &::after {
         display: block;
@@ -51,9 +52,9 @@
     }
 
     &--form {
-      padding-top: 95px;
-      padding-bottom: 78px;
       margin-bottom: 75px;
+      padding-bottom: 78px;
+      padding-top: 93px;
     }
   }
 }
@@ -70,9 +71,9 @@
 
     &--catalog,
     &--form {
-      margin-top: -44px;
+      margin-top: -58px;
       margin-bottom: 112px;
-      padding-top: 93px;
+      padding-top: 94px;
       padding-bottom: 120px;
     }
 

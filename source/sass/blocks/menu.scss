@@ -1,13 +1,13 @@
 .menu {
   list-style: none;
+  padding: 0;
 }
 
 .menu__item {
   text-align: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   min-height: 103px;
+  width: 100%;
+  position: relative;
 
   &--left {
     background-color: $aquamarine-l;
@@ -19,16 +19,14 @@
 }
 
 .menu__link {
-  padding: 10px 30px 10px 30px;
+  display: block;
+  padding: 25px 120px 30px 30px;
   text-decoration: none;
   font-size: 19px;
   font-weight: 700;
   font-style: normal;
   line-height: 24px;
   color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
   cursor: pointer;
 
   &:hover .menu__icon,
@@ -41,68 +39,54 @@
   }
 }
 
-.menu__heading {
-  padding-top: 4px;
-  width: 130px;
-}
-
 .menu__icon {
-  margin-left: auto;
+  position: absolute;
   opacity: 0.5;
   fill: #149080;
 
   &--interior {
     width: 49px;
     height: 62px;
+    right: 33px;
+    top: 23px;
   }
 
   &--toy {
     width: 60px;
-    height: 60px;
+    height: 62px;
+    right: 27px;
+    top: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .menu {
     display: flex;
-    width: 100%;
   }
-
   .menu__item {
-    min-height: 120px;
-    padding-left: 35px;
-    width: 100%;
+    min-height: 119px;
   }
 
   .menu__link {
     font-size: 20px;
     line-height: 30px;
-    padding: 0;
-  }
-
-  .menu__heading {
-    padding-top: 0;
+    padding: 28px 150px 31px 36px;
   }
 
   .menu__icon {
-    margin-right: 30px;
+    &--interior {
+      top: 30px;
+    }
+
+    &--toy {
+      top: 31px;
+      right: 33px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .menu {
-    &::after {
-      background: url("../img/bg-zigzag-fill.svg") repeat-x center 0;
-      height: 15px;
-    }
-  }
-
-  .menu__item {
-    display: flex;
-  }
-
-  .menu__icon {
-    margin-left: auto;
-    align-self: center;
+  .menu__link {
+    padding-right: 350px;
   }
 }
