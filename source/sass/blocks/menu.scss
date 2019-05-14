@@ -1,97 +1,93 @@
 .menu {
   list-style: none;
+  padding: 0;
 }
 
 .menu__item {
-  min-height: 103px;
   text-align: left;
+  min-height: 103px;
+  width: 100%;
+  position: relative;
 
   &--left {
-    // background: url("../img/icon-interior.svg") no-repeat 90% 51%;
     background-color: $aquamarine-l;
   }
 
   &--right {
-    // background: url("../img/icon-toy.svg") no-repeat 90% 51%;
     background-color: $aquamarine-r;
   }
 }
 
 .menu__link {
-  padding-top: 25px;
-  padding-left: 30px;
-  padding-right: 70px;
-  padding-bottom: 30px;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  padding: 25px 120px 30px 30px;
   text-decoration: none;
   font-size: 19px;
   font-weight: 700;
   font-style: normal;
   line-height: 24px;
   color: #ffffff;
-  width: 130px;
+  cursor: pointer;
+
+  &:hover .menu__icon,
+  &:focus .menu__icon {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .menu__icon {
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  opacity: 0.5;
+  fill: #149080;
 
   &--interior {
-    padding-left: 10px;
+    width: 49px;
+    height: 62px;
+    right: 33px;
+    top: 23px;
+  }
+
+  &--toy {
+    width: 60px;
+    height: 62px;
+    right: 27px;
+    top: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .menu {
     display: flex;
-    width: 100%;
-
-    // &::after {
-    //   display: block;
-    //   content: "";
-    //   height: 11px;
-    //   width: 100%;
-    //   background: url("../img/bg-zigzag-fill.svg") repeat-x 2px 0;
-    //   background-size: cover;
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    //   right: 0;
-    // }
   }
 
   .menu__item {
-    min-width: 334px;
-    flex-grow: 1;
-    min-height: 118px;
+    min-height: 119px;
   }
 
   .menu__link {
-    padding-top: 28px;
-    padding-left: 35px;
-    padding-right: 70px;
-    padding-bottom: 25px;
     font-size: 20px;
     line-height: 30px;
+    padding: 28px 150px 31px 36px;
+  }
+
+  .menu__icon {
+    &--interior {
+      top: 30px;
+    }
+
+    &--toy {
+      top: 31px;
+      right: 33px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .menu {
-    &::after {
-      background: url("../img/bg-zigzag-fill.svg") repeat-x center 0;
-      height: 15px;
-    }
-  }
-
-  .menu__item {
-    display: flex;
-  }
-
-  .menu__icon {
-    margin-left: auto;
-    align-self: center;
-    margin-right: 40px;
+  .menu__link {
+    padding-right: 350px;
   }
 }

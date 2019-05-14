@@ -1,0 +1,41 @@
+.copyright__logotype {
+  padding: 22px 0 23px 0;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: black;
+
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: #29b6a1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  fill: #63d1bb;
+}
+
+.copyright__text {
+  margin: 0;
+  padding: 5px 0;
+  margin-right: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .developer__text {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .developer__text {
+    max-width: 260px;
+  }
+}

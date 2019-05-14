@@ -1,18 +1,57 @@
 .button {
   margin: 0;
-  padding: 9px 0;
+  padding: 14px;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 17px;
+  line-height: 20px;
   font-weight: 700;
   color: $maingrey;
   border: 2px solid $maingrey;
   text-align: center;
+  font-family: "OpenSans", "Arial", sans-serif;
+
 
   &--order-info {
-    background-color: transparent;
     width: 100%;
-    padding: 14px;
+    padding: 16px;
+    line-height: 16px;
+    background-color: #ffffff;
+  }
+
+  &--write-feedback {
+    font-size: 18px;
+  }
+
+  &--write-us {
+    font-size: 18px;
+  }
+
+  &--video {
+    line-height: 16px;
+    padding: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #444444;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--write-feedback {
+      font-size: 17px;
+    }
+
+    &--write-us {
+      font-size: 17px;
+    }
   }
 }

@@ -1,17 +1,3 @@
-.comments {
-  &::after {
-    display: block;
-    content: "";
-    background: url("../img/bg-zigzag-line.svg") repeat-x 50% bottom;
-    background-size: contain;
-    height: 6px;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
-}
-
 .comments__title {
   margin: 0 0 24px 0;
   padding: 0;
@@ -19,7 +5,7 @@
 
 .comments__post {
   @include offset;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   font-size: 15px;
   color: $maingrey;
 }
@@ -35,6 +21,8 @@
 .comments__instagram-name {
   @include offset;
   margin-bottom: 29px;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .comments__control {
@@ -49,9 +37,6 @@
 @media (min-width: $tablet-width) {
   .comments {
     position: relative;
-    // display: flex;
-    // justify-content: space-between;
-    // width: 100%;
 
     &::after {
       bottom: 0;
@@ -62,6 +47,7 @@
   }
 
   .comments__inner {
+    min-height: 541px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -71,8 +57,8 @@
     width: 300px;
     background: url("../img/review@1x.jpg") no-repeat 0 50%;
     background-size: cover;
-    padding: 76px 0 50px 50px;
-    margin-bottom: 53px;
+    padding: 76px 0 47px 50px;
+    margin-bottom: auto;
   }
 
   .comments__title {
@@ -96,6 +82,7 @@
     font-size: 17px;
     line-height: 30px;
     font-weight: 400;
+    margin-bottom: 0;
   }
 
   .comments__wrapper {
@@ -104,9 +91,13 @@
     &--control {
       display: flex;
       flex-direction: column-reverse;
-      justify-content: flex-end;
+      justify-content: space-between;
       padding-right: 50px;
     }
+  }
+
+  .comments__control {
+    margin-bottom: 135px;
   }
 
   .comments__button {
@@ -127,22 +118,26 @@
   .comments__inner {
     width: 1050px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0;
   }
 
   .comments__list {
     width: 176px;
-    padding: 70px 0 65px 174px;
+    padding: 72px 0 65px 174px;
     margin-bottom: 90px;
+  }
+
+  .comments__title {
+    margin-bottom: 48px;
   }
 
   .comments__post {
     width: 775px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 
   .comments__author {
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     margin-left: 2px;
     width: 300px;
     font-size: 17px;
@@ -150,7 +145,12 @@
   }
 
   .comments__wrapper {
+    padding-top: 80px;
     padding-right: 0;
+  }
+
+  .comments__control {
+    margin-bottom: 190px;
   }
 
   .comments__button {

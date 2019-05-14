@@ -1,26 +1,38 @@
 .logo {
-  @include offset;
+  margin: 0;
+  display: block;
 }
 
 .logo__image {
+  width: 86px;
   height: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+.logo__options {
+  height: 35px;
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
-  .logo {
+  .logo__image {
     width: 113px;
     height: 46px;
   }
 
-  .logo__image {
-    height: auto;
-    vertical-align: bottom;
+  .logo__options {
+    height: 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .logo {
+  .logo__image {
     width: 149px;
+    height: 72px;
+  }
+
+  .logo__options {
     height: 72px;
   }
 }
