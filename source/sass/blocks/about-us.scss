@@ -3,12 +3,12 @@
   position: relative;
 
   &::after {
-    height: 17px;
+    height: 6px;
     width: 100%;
     display: block;
     content: "";
-    background: url("../img/zigzag-line-desktop.png") repeat-x center 0;
-    background-size: 319px 6px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x center 0;
+    background-size: contain;
     position: absolute;
     left: 0;
     right: 0;
@@ -16,12 +16,12 @@
   }
 
   &::before {
-    height: 17px;
+    height: 6px;
     width: 100%;
     display: block;
     content: "";
-    background: url("../img/zigzag-line-desktop.png") repeat-x center 0;
-    background-size: 319px 6px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x center 0;
+    background-size: contain;
     position: absolute;
     left: 0;
     right: 0;
@@ -91,11 +91,11 @@
     padding-bottom: 68px;
 
     &::after {
-      background: url("../img/zigzag-line-desktop.png") repeat-x center 0;
+      height: 17px;
     }
 
     &::before {
-      background: url("../img/zigzag-line-desktop.png") repeat-x center 0;
+      height: 17px;
     }
   }
 
@@ -152,19 +152,17 @@
     padding-bottom: 75px;
 
     &::after {
-      background: url("../img/bg-zigzag-line.svg") repeat-x 26px 0;
+      background-position: 26px 0;
       height: 23px;
       width: 1050px;
-      background-size: contain;
       margin: 0 auto;
       top: -23px;
     }
 
     &::before {
-      background: url("../img/bg-zigzag-line.svg") repeat-x 26px 0;
+      background-position: 26px 0;
       height: 23px;
       width: 1050px;
-      background-size: contain;
       margin: 0 auto;
     }
   }

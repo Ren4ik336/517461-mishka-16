@@ -199,8 +199,9 @@
   }
 
   .top-product__image {
-    width: 525px;
+    width: 50%;
     height: 636px;
     padding-top: 0;
+    box-sizing: border-box;
   }
 }

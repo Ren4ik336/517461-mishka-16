@@ -38,38 +38,6 @@
   color: $maingrey;
 }
 
-.manufacturing__video-frame {
-  position: relative;
-}
-
-.manufacturing__play {
-  background-color: transparent;
-  position: absolute;
-  width: 101px;
-  height: 77px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  border: none;
-  cursor: pointer;
-  fill: #63d1bb;
-
-  &:hover,
-  &:focus {
-    width: 121px;
-    height: 92px;
-    background-size: contain;
-  }
-
-  &:active {
-    width: 81px;
-    height: 62px;
-    fill: rgba(255, 255, 255, 0.3);
-  }
-}
-
 @media (min-width: $tablet-width) {
   .video__wrapper {
     display: flex;
