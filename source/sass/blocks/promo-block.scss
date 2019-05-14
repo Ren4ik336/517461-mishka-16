@@ -5,6 +5,11 @@
   min-height: 489px;
   box-sizing: border-box;
   min-width: 260px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .promo-block__inner {
@@ -31,6 +36,11 @@
     width: 100%;
     min-height: 745px;
     position: relative;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: cover;
+    }
 
     &::after {
       display: block;
@@ -71,6 +81,11 @@
     background-color: #f9f9f9;
     min-height: 745px;
     position: relative;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: cover;
+    }
 
     &::before {
       display: block;

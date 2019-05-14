@@ -526,7 +526,7 @@
     line-height: 30px;
     margin-top: 9px;
     margin-bottom: 63px;
-    flex-grow: 1;
+    margin-left: auto;
   }
 
   .form__button {
@@ -642,5 +642,6 @@
 
   .form__requare-input {
     margin-left: 170px;
+    margin-right: auto;
   }
 }
