@@ -33,6 +33,13 @@
     padding: 16px;
   }
 
+  &--modal {
+    background-color: rgb(99, 209, 187);
+    border: none;
+    color: #ffffff;
+    padding: 16px;
+  }
+
   &:hover,
   &:focus {
     background-color: #444444;
