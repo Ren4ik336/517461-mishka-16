@@ -25,7 +25,6 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-
 for (index = 0; index < cartButton.length; index ++) {
   element = cartButton[index];
   element.addEventListener("click", function(evt) {
