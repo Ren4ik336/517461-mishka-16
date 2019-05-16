@@ -432,6 +432,7 @@
   .form__list {
     &--color {
       min-width: 501px;
+      max-width: 758px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -621,6 +622,7 @@
 
   .form__list {
     &--color {
+      max-width: none;
       width: 875px;
       flex-grow: 0;
       justify-content: flex-start;
