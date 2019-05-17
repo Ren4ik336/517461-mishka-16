@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Мишка | Форма</title>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__inner">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -34,7 +37,7 @@
             <div class="user-menu__item">
               <a class="user-menu__link user-menu__link--search" href="#">
                 <svg class="user-menu__icon-search" width="18px" height="18px">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                  <use xlink:href="#icon-search"></use>
                 </svg>
                 Поиск по сайту
               </a>
@@ -42,7 +45,7 @@
             <div class="user-menu__item">
               <a class="user-menu__link user-menu__link--cart" href="#">
                 <svg class="user-menu__icon-cart" width="21" height="18">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
                 Корзина: пока пуста
               </a>
@@ -144,7 +147,7 @@
             <div class="form__input-field">
               <input class="form__input form__input--telephone" id="telephone" type="text" name="telephone" placeholder="+7 XXX XXX XX XX*">
               <svg class="form__icon form__icon--telephone" width="25" height="24">
-                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                <use xlink:href="#icon-phone"></use>
               </svg>
             </div>
         </div>
@@ -155,7 +158,7 @@
             <div class="form__input-field">
               <input class="form__input form__input--email" id="email" type="text" name="patronymic" placeholder="Ваш Email*">
               <svg class="form__icon form__icon--email" width="32" height="21">
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
+                <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
         </div>
@@ -175,7 +178,7 @@
       <div class="page-footer__inner">
         <a class="logo page-footer__logo" href="index.html">
           <svg class="logo__footer-image" width="102" height="34">
-            <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+            <use xlink:href="#icon-logo-footer"></use>
           </svg>
         </a>
         <ul class="social-menu page-footer__social-menu">
@@ -183,7 +186,7 @@
             <a class="social-menu__link social-menu__link--instagram" href="#">
               <span class="visually-hidden">Инстаграм</span>
               <svg class="social-menu__icon social-menu__icon--instagram" width="22" height="21">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -191,7 +194,7 @@
             <a class="social-menu__link social-menu__link--facebook" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <svg class="social-menu__icon social-menu__icon--ifacebook" width="15" height="28">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -199,7 +202,7 @@
             <a class="social-menu__link social-menu__link--twitter" href="#">
               <span class="visually-hidden">Твиттер</span>
               <svg class="social-menu__icon social-menu__icon--twitter" width="23" height="20">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -208,12 +211,13 @@
           <a class="copyright__logotype" href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
             <svg class="copyright__icon" width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
+              <use xlink:href="#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/svg-icon-polyfill.min.js" async></script>
   </body>
 </html>
