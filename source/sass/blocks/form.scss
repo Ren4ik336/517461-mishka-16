@@ -7,8 +7,16 @@
     margin-bottom: 11px;
   }
 
+  &--radio .form__input {
+    width: auto;
+  }
+
   &--checkbox {
     margin-bottom: 11px;
+  }
+
+  &--checkbox .form__input {
+    width: auto;
   }
 
   &--input {

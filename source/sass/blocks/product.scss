@@ -108,6 +108,10 @@
     font-size: 17px;
   }
 
+  .product__link {
+    flex-grow: 1;
+  }
+
   .product__image {
     margin-bottom: 0;
     min-width: 334px;
