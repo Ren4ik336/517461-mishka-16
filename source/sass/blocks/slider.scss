@@ -74,6 +74,10 @@
     background: url("../img/icon-right-arrow.svg") no-repeat center center;
   }
 
+  &--disabled {
+    cursor: not-allowed;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;

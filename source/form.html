@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <title>HTML Academy: Мишка | Форма</title>
-    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display: none;">
@@ -85,35 +88,35 @@
           </ul>
         </div>
         <div class="form__type form__type--checkbox container">
-            <h3 class="form__title form__title--color">
-              <span class="form__title-modify">Цвет</span>
-            </h3>
-            <ul class="form__list form__list--color">
-              <li class="form__color-item">
-                <input class="form__input visually-hidden" id="color-id-1" type="checkbox" checked>
-                <label class="form__checkbox" for="color-id-1" tabindex="0">Белый</label>
-              </li>
-              <li class="form__color-item">
-                <input class="form__input visually-hidden" id="color-id-2" type="checkbox" checked>
-                <label class="form__checkbox" for="color-id-2" tabindex="0">Серый</label>
-              </li>
-              <li class="form__color-item">
-                <input class="form__input visually-hidden" id="color-id-3" type="checkbox">
-                <label class="form__checkbox" for="color-id-3" tabindex="0">«Тиффани»</label>
-              </li>
-              <li class="form__color-item">
-                <input class="form__input visually-hidden" id="color-id-4" type="checkbox">
-                <label class="form__checkbox" for="color-id-4" tabindex="0">Черный</label>
-              </li>
-              <li class="form__color-item">
-                <input class="form__input visually-hidden" id="color-id-5" type="checkbox">
-                <label class="form__checkbox" for="color-id-5" tabindex="0">Розовый</label>
-              </li>
-              <li class="form__color-item">
-                <input class="form__input visually-hidden" id="color-id-6" type="checkbox">
-                <label class="form__checkbox" for="color-id-6" tabindex="0">Оранжевый</label>
-              </li>
-            </ul>
+          <h3 class="form__title form__title--color">
+            <span class="form__title-modify">Цвет</span>
+          </h3>
+          <ul class="form__list form__list--color">
+            <li class="form__color-item">
+              <input class="form__input visually-hidden" id="color-id-1" type="checkbox" checked>
+              <label class="form__checkbox" for="color-id-1" tabindex="0">Белый</label>
+            </li>
+            <li class="form__color-item">
+              <input class="form__input visually-hidden" id="color-id-2" type="checkbox" checked>
+              <label class="form__checkbox" for="color-id-2" tabindex="0">Серый</label>
+            </li>
+            <li class="form__color-item">
+              <input class="form__input visually-hidden" id="color-id-3" type="checkbox">
+              <label class="form__checkbox" for="color-id-3" tabindex="0">«Тиффани»</label>
+            </li>
+            <li class="form__color-item">
+              <input class="form__input visually-hidden" id="color-id-4" type="checkbox">
+              <label class="form__checkbox" for="color-id-4" tabindex="0">Черный</label>
+            </li>
+            <li class="form__color-item">
+              <input class="form__input visually-hidden" id="color-id-5" type="checkbox">
+              <label class="form__checkbox" for="color-id-5" tabindex="0">Розовый</label>
+            </li>
+            <li class="form__color-item">
+              <input class="form__input visually-hidden" id="color-id-6" type="checkbox">
+              <label class="form__checkbox" for="color-id-6" tabindex="0">Оранжевый</label>
+            </li>
+          </ul>
         </div>
         <div class="form__type form__type--input container">
           <h3 class="form__title form__title--name">
@@ -123,13 +126,13 @@
             <li class="form__name-item">
               <label class="form__text">
                 <span class="form__initials">Имя:</span>
-                <input class="form__input form__input--first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
+                <input class="form__input form__input--first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
               </label>
             </li>
             <li class="form__name-item">
               <label class="form__text">
                 <span class="form__initials">Фамилия:</span>
-                <input class="form__input form__input--last-name" type="text" name="last-name" placeholder="Укажите фамилию*">
+                <input class="form__input form__input--last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
               </label>
             </li>
             <li class="form__name-item">
@@ -145,7 +148,7 @@
               <label class="form__title-modify" for="telephone">Тел</label>
             </h3>
             <div class="form__input-field">
-              <input class="form__input form__input--telephone" id="telephone" type="text" name="telephone" placeholder="+7 XXX XXX XX XX*">
+              <input class="form__input form__input--telephone" id="telephone" type="text" name="telephone" placeholder="+7 XXX XXX XX XX*" required>
               <svg class="form__icon form__icon--telephone" width="25" height="24">
                 <use xlink:href="#icon-phone"></use>
               </svg>
@@ -156,7 +159,7 @@
               <label class="form__title-modify" for="email">E-mail</label>
             </h3>
             <div class="form__input-field">
-              <input class="form__input form__input--email" id="email" type="text" name="patronymic" placeholder="Ваш Email*">
+              <input class="form__input form__input--email" id="email" type="text" name="email" placeholder="Ваш Email*" required>
               <svg class="form__icon form__icon--email" width="32" height="21">
                 <use xlink:href="#icon-mail"></use>
               </svg>
@@ -218,6 +221,8 @@
       </div>
     </footer>
     <script src="js/main.min.js"></script>
+    <script src="js/yamap.min.js"></script>
+    <script src="js/picturefill.min.js" async></script>
     <script src="js/svg-icon-polyfill.min.js" async></script>
   </body>
 </html>

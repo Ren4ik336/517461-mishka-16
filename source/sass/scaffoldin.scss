@@ -23,6 +23,7 @@ body {
   font-style: normal;
   font-size: 15px;
   line-height: 30px;
+  overflow-x: hidden;
 }
 
 img {
@@ -51,6 +52,7 @@ img {
 
 @media (min-width: $desktop-width) {
   body {
-    min-width: 1150px;
+    max-width: 1150px;
+    margin: 0 auto;
   }
 }

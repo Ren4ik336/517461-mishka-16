@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <title>HTML Academy: Мишка | Каталог</title>
-    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display: none;">
@@ -86,7 +89,7 @@
               <p class="product__description">Рост 30 см, вес 200 г</p>
               <div class="product__buy">
                 <div class="product__price">1 200 руб.</div>
-                <a class="product__add-cart" href="#">
+                <a class="product__add-cart button--order" href="#">
                   <svg class="product__cart-icon" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -110,7 +113,7 @@
               <p class="product__description">Диаметр 15 см, высота 10 см</p>
               <div class="product__buy">
                 <div class="product__price">690 руб.</div>
-                <a class="product__add-cart" href="#">
+                <a class="product__add-cart button--order" href="#">
                   <svg class="product__cart-icon" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -134,7 +137,7 @@
               <p class="product__description">Диаметр 30 см, высота 30 см</p>
               <div class="product__buy">
                 <div class="product__price">1 500 руб.</div>
-                <a class="product__add-cart" href="#">
+                <a class="product__add-cart button--order" href="#">
                   <svg class="product__cart-icon" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -230,8 +233,11 @@
           <button class="button modal__button button--modal" type="submit">Добавить</button>
         </form>
       </div>
+      <div class="modal__overlay"></div>
     </div>
     <script src="js/main.min.js"></script>
+    <script src="js/yamap.min.js"></script>
+    <script src="js/picturefill.min.js" async></script>
     <script src="js/svg-icon-polyfill.min.js" async></script>
   </body>
 </html>

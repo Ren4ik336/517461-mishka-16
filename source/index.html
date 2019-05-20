@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <title>HTML Academy: Мишка | Главная</title>
-    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display: none;">
@@ -195,8 +198,8 @@
               </li>
             </ul>
             <div class="slider__controls">
-              <button class="slider__btn slider__btn--prev" type="button"></button>
-              <button class="slider__btn slider__btn--next slider__btn--disabled" type="button"></button>
+              <button class="slider__btn slider__btn--prev" type="button" aria-label="Предыдущий отзыв"></button>
+              <button class="slider__btn slider__btn--next" type="button" aria-label="Следующий отзыв"></button>
             </div>
             <a class="button slider__button button--write-feedback" href="#">Написать</a>
           </article>
@@ -223,8 +226,7 @@
           </table>
         </div>
         <div class="contacts__map">
-          <iframe class="contacts__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.636467135718!2d30.321453330250108!3d59.93817424496496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2sBolshaya+Konyushennaya+ul.%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1466503343904" style="border:0" allowfullscreen="">
-          </iframe>
+          <div id="map" class="contacts__map-frame"></div>
         </div>
         <a class="button contacts__button button--write-us " href="#">Напишите нам</a>
       </section>
@@ -288,8 +290,13 @@
           <button class="button modal__button button--modal" type="submit">Добавить</button>
         </form>
       </div>
+      <div class="modal__overlay"></div>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<dd5460ab-31d9-4ffe-bf86-6d3df157d8d1>&lang=ru_RU" type="text/javascript">
+    </script>
     <script src="js/main.min.js"></script>
+    <script src="js/yamap.min.js"></script>
+    <script src="js/picturefill.min.js" async></script>
     <script src="js/svg-icon-polyfill.min.js" async></script>
   </body>
 </html>
