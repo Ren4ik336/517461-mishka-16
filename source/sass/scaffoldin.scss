@@ -49,10 +49,3 @@ img {
     min-width: 768px;
   }
 }
-
-@media (min-width: $desktop-width) {
-  body {
-    max-width: 1150px;
-    margin: 0 auto;
-  }
-}
